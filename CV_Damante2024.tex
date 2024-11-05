@@ -1,5 +1,4 @@
-\documentclass[paper=a4,fontsize=12pt]{article} % KOMA-article class
-
+\documentclass[fontsize=12pt]{article} % KOMA-article class
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[protrusion=true,expansion=true]{microtype}
@@ -8,11 +7,11 @@
 \usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
 \usepackage{geometry}
 \usepackage{booktabs}
-\usepackage{xcolor} 
+\usepackage{xcolor}
 \usepackage{subfigure}
 \usepackage{pdfpages}
 \usepackage{siunitx}
-\usepackage{float} 
+\usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \newcommand{\openquote}{``}
 \newcommand{\closequote}{''}
@@ -22,7 +21,7 @@
 %\textwidth=450px
 
 \usepackage{url}
-\usepackage{lmodern} 
+\usepackage{lmodern}
 %\usepackage[sc]{mathpazo} % Use the Palatino font
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \bibliographystyle{unsrt}
@@ -67,7 +66,7 @@
 	\noindent\hangindent=2em\hangafter=0 % Indentation
 	\parbox{\spacebox}{        % Box to align text
 		\textit{#1}}			   % Entry name (birth, address, etc.)
-	\hspace{1.5em} #2 \par}    % Entry value	
+	\hspace{1.5em} #2 \par}    % Entry value
 
 \newcommand{\EducationEntry}[4]{
 	\noindent \textbf{#1} \hfill      % Study
@@ -88,7 +87,7 @@
 \fancyhf{}
 \rhead{}
 \renewcommand{\headrulewidth}{0pt}
-\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\rfoot{Page\thepage\hspace{1pt} of \pageref{LastPage}}
 %%% Begin Document
 %%% ------------------------------------------------------------
 \begin{document}
@@ -101,169 +100,173 @@
     %\vspace*{-2em}
 	\MyName{Valeria D'Amante}
 	\MySlogan{Curriculum Vitae}
-	
-	
-	
-    % ------------------------------------- PERSONAL INFORMATION ------------------------------------- 
+
+
+
+    % ------------------------------------- PERSONAL INFORMATION -------------------------------------
 
 	\NewPart{Personal details}
-	\PersonalEntry{Date and place of birth}{January 20, 1994 - Naples (NA), Italy}
+	\PersonalEntry{Date and place of birth}{January 20, 1994 {-} Naples (NA), Italy}
 	\PersonalEntry{Fiscal code}{DMNVLR94A60F839G}
 	\PersonalEntry{Address}{Via Cesare Studiati, 1, 56127 Pisa (PI), Italy}
 	%\PersonalEntry{Residence Address}{Piazza F. Muzii 11 Bis, 80129 Naples, Italy}
 	\PersonalEntry{Citizenship}{Italian}
-	\PersonalEntry{Phone}{(+39) 348-2212936}
-	\PersonalEntry{personal e-mail (principal)}{valeriadamante@outlook.it}
-	\PersonalEntry{personal e-mail (secondary)}{valeriadamante@gmail.com}
-	\PersonalEntry{work e-mail}{v.damante@cern.ch} 
-	\PersonalEntry{ORCID}{\href{https://orcid.org/0000-0002-7342-2592}{0000-0002-7342-2592}} 
-	\PersonalEntry{Social Profiles}{\href{https://www.linkedin.com/in/valeria-d-amante-44943820b/}{LinkedIN}, \href{https://www.facebook.com/Valy.20/}{Facebook}, \href{https://www.instagram.com/valeriadamante/}{Instagram}}
+	\PersonalEntry{Phone}{(+39) 3482212936}
+	\PersonalEntry{personal e\-mail (principal)}{valeriadamante@outlook.it}
+	\PersonalEntry{personal e\-mail (secondary)}{valeriadamante@gmail.com}
+	\PersonalEntry{work e-mail}{v.damante@cern.ch}
+	\PersonalEntry{ORCID}{\href{https://orcid.org/0000-0002-7342-2592}{0000-0002-7342-2592}}
+	\PersonalEntry{Social}{\href{https://www.linkedin.com/in/valeria-d-amante-44943820b/}{LinkedIN}, \href{https://www.facebook.com/Valy.20/}{Facebook}, \href{https://www.instagram.com/valeriadamante/}{Instagram}}
 
-    % ------------------------------------- EDUCATIONAL BACKGROUND ------------------------------------- 
+    % ------------------------------------- EDUCATIONAL BACKGROUND -------------------------------------
 	\NewPart{Educational background}
-	\EducationEntry{Ph.D. Student in Experimental Particle Physics}{Nov 2020 -- now}{Università di Siena}{Enrolled with a 3 years grant from University of Siena.\\Thesis advisor: Prof. Maria Agnese Ciocci}
+
+	\EducationEntry{Ph.D. Student in Experimental Particle Physics}{Nov 2020 {--} now}{Università di Siena}{Enrolled with a 3 years grant from University of Siena.\\Thesis advisor: Prof. Maria Agnese Ciocci}
 	\sepspace
-	\EducationEntry{Master's Degree in Physics}{Nov 2016 -- Feb 2020}{Università degli studi di Napoli \openquote Federico II\closequote}{Curriculum: \textit{Subnuclear and Astroparticle Physics} \\Final mark: 110/110 cum Laude\\
+	\EducationEntry{Master's Degree in Physics}{Nov 2016 {--} Feb 2020}{Università degli studi di Napoli \openquote Federico II\closequote}{Curriculum: \textit{Subnuclear and Astroparticle Physics} \\Final mark: 110/110 cum Laude\\
 	Thesis title: \textit{``Measurements of the CKM matrix elements in single top events at
 			CMS with machine learning techniques''}  \cite{thesis}\\
 		Thesis advisor: Dott. Alberto Orso Maria Iorio\\ The master courses cover the topics of Particle Physics, Theoretical High Energy Physics, and Particle Detectors. For master course information and grades, see the Diploma Supplement \cite{diploma_supplement}.	}
 	\sepspace
-	\EducationEntry{Bachelor's Degree in Physics}{Sept 2012 -- Nov 2016}{Università degli studi di Napoli \openquote Federico II\closequote}
+	\EducationEntry{Bachelor's Degree in Physics}{Sept 2012 {--} Nov 2016}{Università degli studi di Napoli \openquote Federico II\closequote}
 	{Final mark:  107/110\\
 		Thesis title: \textit{``Study of direct detection of Dark Matter with a bi-phasic Argon TPC.''}\\
 		Thesis advisor: Prof. Giuliana Fiorillo, Dott. Biagio Rossi \\
 		The bachelor degree course includes courses of Mathematical analysis, Classical Physics, Quantum Mechanics, Matter Physics, Nuclear, Particle Physics and hands-on Laboratories during all the years.}
 \sepspace
-\EducationEntry{High School Diploma at Liceo Classico}{Sept 2007 -- Jul 2012}{``Istituto Pontano'' High School, Naples, Italy}
+\EducationEntry{High School Diploma at Liceo Classico}{Sept 2007 {--} Jul 2012}{``Istituto Pontano'' High School, Naples, Italy}
 {final mark: 90/100}
 \sepspace
-   
-    
+
+
     \sepspace
-      % ------------------------------------- INTEREST ------------------------------------- 
+      % ------------------------------------- INTEREST -------------------------------------
     \NewPart{Field of interest}
     \EducationEntry{Neutrino physics}{}{}{One of the most interesting field in physics, in my opinion, is the neutrino oscillation phenomenon: it's one of the very few Beyond Standard Model (BSM) process that currently can be actually measured. Moreover the very weakly interactions of neutrinos make their detection very challenging, pushing the detector and electronics technology to search for advanced detection methods.}
-    \sepspacesmall 
+    \sepspacesmall
 	\EducationEntry{Higgs physics at colliders}{}{}{Higgs physics at colliders is essential for a better understanding of the mechanism behind mass generation, probing the Electroweak Symmetry Breaking, to test the limits of the Standard Model, searching for deviations or anomalies that may indicate the presence of new physics, and gaining insights into the early universe.}
-	\sepspacesmall 
+	\sepspacesmall
 	\EducationEntry{Machine Learning algorithms application in High Energy Physics (HEP)}{}{}{Machine Learning allows to perform efficient data analysis, identifying patterns crucial for discovering new particles and understanding fundamental interactions,to perform optimal distinction of signals from background noise, improving particle identification and event classification accuracy, essential for detecting rare events and unveiling new physics phenomena. Moreover, it accelerates computationally intensive simulations, providing faster alternatives that maintain accuracy.}
-	\sepspacesmall 
-        % ------------------------------------- WORK EXPERIENCE ------------------------------------- 
+	\sepspacesmall
+        % ------------------------------------- WORK EXPERIENCE -------------------------------------
     \NewPart{Work Experience}
-	\EducationEntry{CERN Doctoral Student}{Feb 2022 -- Feb 2023}{CERN, Geneva, Switzerland}{I won a grant by  issued by Istituto Nazionale di Fisica Nucleare (INFN) in collaboration with CERN through which I spent one year at CERN as a doctoral student. During this year I continued my doctoral research work, with the benefit of being physically at CERN and having the opportunity to be able to participate in data taking as a shifter/DOC and to become an official CERN guide as well as to participate in scientific events organized by CERN and CMS.}
-	\sepspace     
-	\EducationEntry{Member of the CMS research team}{Feb 2021 -- now}{CMS Experiment, CERN, Geneva}{The CMS Experiment is a general-purpose detector at the Large Hadron Collider (LHC). It is one of the largest international scientific collaborations in history, involving 5000 particle physicists, engineers, technicians, students and support staff from 200 institutes in 50 countries.}
-    \sepspace 
-	\EducationEntry{Ph.D. Student }{Nov 2020 -- now}{Università di Siena, INFN Sezione di Pisa, CERN}{The topic of my Ph.D. thesis is the search for a resonance (X) decaying into a Higgs bosons pair (HH) where one of the Higgs boson decays in a tau pair and the other in a pair of b quarks (\hhbbtt),The analysis will be performed with data collected by the CMS Experiment during the Run\;2 (2016-2018) LHC data taking, at a center-of-mass energy of $\sqrt{s}$ = 13TeV. More details can be found in the "Research activity" section. During my Ph.D. activity I am associated to the Istituto Nazionale di Fisica Nucleare (INFN) Sezione di Pisa and to the CERN of Geneva.}
-    \sepspace      
-	\EducationEntry{Fermilab Summer Student}{Jul 2018 -- Sept 2018}{SBND Experiment, Fermilab, Batavia (IL)}{I was selected for the DOE and INFN-funded "Summer Student Exchange program", and I spent two months at the Fermilab laboratory in Batavia (USA) working for the SBND collaboration under the supervision of Prof. Ornella Palamara on the expected neutrino event rate at the SBND detector for its full exposure time. Note that, for completeness, this entry is reported also in the "Attended summer schools" sections. More details can be found in the "Research activity" section.\\ \noindent This work has been evaluated as an exam which has been passed with 30/30 cum laude \cite{partecip_fermilab}.} 
+	\EducationEntry{Research assignee}{Feb 2024 {--} now}{Università di Pisa}{I won a scholarship in order to continue my research activities for the completion of the Ph.D.}
+	\sepspace
+	\EducationEntry{CERN Doctoral Student}{Feb 2022 {--} Feb 2023}{CERN, Geneva, Switzerland}{I won a grant by  issued by Istituto Nazionale di Fisica Nucleare (INFN) in collaboration with CERN through which I spent one year at CERN as a doctoral student. During this year I continued my doctoral research work, with the benefit of being physically at CERN and having the opportunity to be able to participate in data taking as a shifter/expert on call, and to become an official CERN guide as well as to participate in scientific events and conferences at CERN.}
+	\sepspace
+	\EducationEntry{Member of the CMS research team}{Feb 2021 {--} now}{CMS Experiment, CERN, Geneva}{The CMS Experiment is a general-purpose detector at the Large Hadron Collider (LHC). It is one of the largest international scientific collaborations in history, involving 5000 particle physicists, engineers, technicians, students and support staff from 200 institutes in 50 countries.}
     \sepspace
- 
-	\NewPart{Work Experience within the Compact Muon Solenoid (CMS) experiment}
-	\EducationEntry{Technical Shifter (ex DCS) during 2023 data taking}{April 2023 - June 2023}{CMS Experiment at CERN, Geneva, Switzerland}{The general task of the Central-Technical Detector Control System (DCS) shifter is to make sure that CMS is ready for Physics data-taking by monitoring the Central DCS, the services, communicating with the subdetectors' shifters/experts, and turning on/standby the subdetectors. The Shiter responsibilities are: handle and monitor the central DCS, the subdetector statuses, the alarm screen, services (rack, cooling) and DSS screens; manage LHC-CMS handshake, Access Control and CMS elevator control; perform the Safety tour; report every change in the internal DCS elog and be informed on the status of the detector at the begin of the shift by reading the reports of the previous shift and talking to the previous shifter about any specific problems that need attention; fill in the checklists at: begin and end of Shift, Beam Injection, during Data-taking; take actions in case of problems (either directly act or call the experts).}
+	\EducationEntry{Ph.D. Student }{Nov 2020 {--} now}{Università di Siena, INFN Sezione di Pisa, CERN}{The topic of my Ph.D. thesis is the search for a resonance (X) decaying into a Higgs bosons pair (HH) where one of the Higgs boson decays in a tau pair and the other in a pair of b quarks (\hhbbtt),The analysis is performed with data collected by the CMS Experiment during the Run\;2 (2016-2018) LHC data taking, at a center-of-mass energy of $\sqrt{s}$ = 13TeV. More details can be found in the "Research activity" section. During my Ph.D. activity I am associated to the Istituto Nazionale di Fisica Nucleare (INFN) Sezione di Pisa and to the CERN of Geneva.}
+    \sepspace
+	\EducationEntry{Fermilab Summer Student}{Jul 2018 {--} Sept 2018}{SBND Experiment, Fermilab, Batavia (IL)}{I was selected for the DOE and INFN funded "Summer Student Exchange program", and I spent two months at the Fermi Nation Accelerator Laboratory in Batavia (Illinois, USA) working for the SBND collaboration under the supervision of Prof. Ornella Palamara on the expected neutrino event rate at the SBND detector for its full exposure time. More details can be found in the "Research activity" section.\\ \noindent This work has been evaluated as an exam which has been passed with 30/30 cum laude \cite{partecip_fermilab}.}
+    \sepspace
 
-	\sepspace 
+	\NewPart{Work Experience within the Compact Muon Solenoid (CMS) experiment}
+	\EducationEntry{Technical Shifter during 2023 data taking}{April 2023 - June 2023}{CMS Experiment at CERN, Geneva, Switzerland}{The primary role of the Central-Technical Detector Control System (DCS) shifter is to ensure CMS is prepared for physics data-taking by monitoring the Central DCS, overseeing services, and coordinating with subdetector shifters and experts. Responsibilities include monitoring subdetector statuses, alarm and service screens (rack, cooling, DSS), managing the LHC-CMS handshake, Access Control, and CMS elevator, performing safety tours, and recording updates in the DCS log. The shifter begins each shift by reviewing prior reports, checks the detector status, completes required checklists, and takes action in response to issues, either directly or by contacting experts.}
+
+	\sepspace
 	\EducationEntry{Tau Trigger Convener}{Sept 2022 - Feb 2024}{CERN, Geneva, Switzerland}{
-	I am in charge of manage the tau trigger CMS group, which is a subgroup of TauPOG and Trigger Studies Group (TSG). I was chosen given my experience with the CMS trigger system and in particular the tau trigger related section. My principal duties as Tau Trigger convener are: maintain and coordinate the developments of tau-related HLT triggers; coordinate the efficiency and SF measurements of tau legs for the trigger paths listed above, and promptly provide the results during Run 3 data-taking; actively contribute to the development and maintenance of the corresponding code; represent the Tau POG in TSG and related coordination meetings, with weekly report about the status of the tau trigger group works and tasks; present the Tau trigger results and works at meetings requiring such feedbacks, as the Strategy for Trigger Evolution And Monitoring (STEAM) meeting for the data performance review, the TauPOG meetings, trigger related conferences, workshop and tutorials ecc.; coordinate regular validation of tau@HLT for new CMSSW releases using DQM tools; chair weekly tau trigger meetings and ensure the advancement in all aforementioned tasks, provide to the group news and feedback from TSG, STEAM and coordination; follow tau trigger related work for the preparation for HL-LHC and CMS Phase 2.
-}
-	\sepspace 
-    \EducationEntry{Tau Trigger Software Validator}{June 2023 -- now}{CMS Experiment, CERN, Geneva}{I am responsible of the Data Quality Monitoring (DQM) for the tau trigger group. The tau trigger DQM aims to study and monitortrigger efficiencies for all trigger paths involving taus. My principal duty is to check that for different CMS-Software \texttt{CMSSW} releases there are no huge differences in such efficiencies or, if any difference is spotted, understand the reason of such differences and eventually communicate the issue. For every new \texttt{CMSSW} release and DQM validation, a report about the trigger performances must be delivered.}
+		I was in charge the CMS tau trigger group, a subgroup within the TauPOG and Trigger Studies Group (TSG), selected for this role due to my expertise with the CMS trigger system, especially in tau triggers. My main responsibilities included coordinating developments of tau-related HLT triggers, managing efficiency and scale factor measurements, and delivering results promptly during Run 3. I contributed to the software development, represent TauPOG in TSG meetings, and report about group progress. Additionally, I presented tau trigger results at key meetings, validate tau@HLT for new CMSSW releases, chair weekly group meetings, and oversee preparations for HL-LHC and CMS Phase 2.}
+	\sepspace
+    \EducationEntry{Tau Trigger Software Validator}{June 2023 {--} February 2024}{CMS Experiment, CERN, Geneva}{I have been responsible of the Data Quality Monitoring (DQM) for the tau trigger group. The tau trigger DQM aims to study and monitortrigger efficiencies for all trigger paths involving taus. My principal duty was to check that for different CMS-Software \texttt{CMSSW} releases there are no huge differences in such efficiencies or, if any difference is spotted, understand the reason of such differences and eventually communicate the issue. For every new \texttt{CMSSW} release and DQM validation, a report about the trigger performances must be delivered.}
     \sepspace
 	\EducationEntry{HLT Expert on call}{June 2022 - Oct 2022}{CERN, Geneva, Switzerland}{
-	THE CMS HLT DOC, High Level Trigger (HLT) Detector-On-Call expert, is a key role for the data taking in the experiment and makes a vital contribution to CMS's ability to take high quality physics data. The HLT DOC interacts with Run Coordination and the different subsystem experts, in order to work together to resolve issues and ensure efficient data collection. The HLT DOC has the following duties: be 24/7 available for any trigger related emergency with special HLT DOC phone numbers; efficient communication for CMS Operation; operating the High-Level Trigger system: follow and prepare the deployment of physics HLT menus prepared by STORM (Software, Tools, Online Releases and Menus) group and Field Operation Group (FOG), testing them via the CMS Hilton Machine, preparing the HLT and L1Trigger prescales to be provided for the menu; monitoring the Trigger and DAQ System, HLT rates at all levels (paths, streams, datasets), online farm operation: data flow, crashes; data certification; report at weekly coordination meetings and daily CMS operation meetings.\\}
-	\sepspace 
-	\EducationEntry{Offline Shifter Tracker}{Jul 2021}{CMS Experiment, CERN, Geneva}{Member of research team responsible for the offline certification of the data collected by the tracking system of the Compact Muon Solenoid (CMS) experiment. The activity consists in qualifying the data collected during the shift, evaluating the performance of the tracker and its sub-detectors (strips and pixels) after a pre-qualification in real time (online). Offline qualification is necessary for a prompt feedback on the detector behaviour and to be able to certify the quality of the data that will then be used for physical analyses within the CMS collaboration.\\ The offline shift has been hold in remote, at the INFN Pisa. I did the shift during the Calibration Run at ZEro Tesla (CRUZET) with cosmic rays in July. \\This activity, together with the Data Quality Monitoring one, allowed me to acquire a good experience and knowledge of the CMS tracker.} 
+		The CMS High-Level Trigger (HLT) Detector-On-Call (DOC) expert is crucial for ensuring high-quality data collection during CMS operations. The HLT DOC collaborates with Run Coordination and subsystem experts to quickly address issues and optimize data-taking. Responsibilities include 24/7 availability for trigger-related emergencies, operating the HLT system, deploying and testing physics HLT menus from the STORM and FOG groups, preparing HLT and L1Trigger prescales, and monitoring HLT rates, data flow, and the DAQ system. The DOC also certifies data quality and reports regularly in CMS operations and coordination meetings.}
+\sepspace
+	\EducationEntry{Offline Shifter Tracker}{Jul 2021}{CMS Experiment, CERN, Geneva}{I was part of the CMS research team responsible for offline certification of data collected by the tracking system, assessing the performance of tracker sub-detectors (strips and pixels) based on initial real-time (online) checks. Offline certification provides prompt feedback on detector behavior and ensures data quality for subsequent physics analyses within CMS. I conducted this remote shift from INFN Pisa during the Calibration Run at Zero Tesla (CRUZET) with cosmic rays in July, gaining significant experience and knowledge of the CMS tracker through this role and related Data Quality Monitoring activities.}
 	 \sepspace
-    \EducationEntry{CMS Phase-2 Tracker Software Validator}{Dec 2020 -- Dec 2022}{CMS Experiment, CERN, Geneva}{I am member of the Tracker software validation group in Pisa. The main activities of this group are the Data Quality Monitoring (DQM)and the improvement to the CMS Phase-2 Tracker simulation software.\\ I am involved in the Tracker (Inner and Outer) DQM,which aims to follow the evolution of relevant quantities in \texttt{CMSSW}) releases describing the running conditions of the detector and its performance. The goal is to spot possible differences with respect to previous simulations and instabilities, providing a report about the correctness of the new \texttt{CMSSW} release. Each time a new \texttt{CMSSW} version is released, the Pisa Tracker Software Validation group must provide the report describing the quality of the Tracker Simulation on the data monitored.}
+    \EducationEntry{CMS Phase-2 Tracker Software Validator}{Dec 2020 {--} Dec 2022}{CMS Experiment, CERN, Geneva}{I have been a member of the Tracker Software Validation group in Pisa, where we focus on Data Quality Monitoring (DQM) and enhancing the CMS Phase-2 Tracker simulation software. My role involves monitoring key metrics of both the Inner and Outer Tracker across new \texttt{CMSSW} releases to detect any deviations or instabilities in detector performance. For each new \texttt{CMSSW} version, our group evaluates and reports on the quality of the Tracker simulation, ensuring accuracy and consistency with previous simulations.}
     \sepspace
-    \EducationEntry{Member of the \hhbbtt \;research group}{Nov 2020 - now}{CMS Experiment, CERN, Geneva}{Since the beginning of my Ph.D. I became part of the CMS \hhbbtt \, research group. The group is currently involved into the HH searches via resonant mechanism: the X resonances considered can have either spin 0 (Radion model) or spin 2 (Bulk Graviton model), with a range of mass from 250 GeV to 3 TeV. The investigated final state has one of the Higgs bosons decaying into two $b$ quarks and the other decaying into two $\tau$ leptons (\hhbbtt). The search is performed on data from proton-proton collisions at a center-of-mass energy of $\sqrt{s} = \SI{13}{\tera \electronvolt}$ collected at the CMS experiment, corresponding to an integrated luminosity of $\SI{137.1}{\femto\barn ^{-1}}$. \\
-    This analysis follows up search for the non-resonant double Higgs boson (HH) production via gluon-gluon fusion (GGF) and vector boson fusion (VBF) mechanisms at the CMS experiment, in which I collaborated too, by performing studies on the systematic sources of uncertainties and limit extraction. The analysis is now public after almost one year of CMS reviews. This result is also part of the HH combined results presented by the CMS experiment on Nature in occasion of the 10th year from the Higgs boson discovery. A more detailed description of the analysis is available in this paper of which I am co-author,\;\cite{bbttananote}.} 
+    \EducationEntry{Member of the \hhbbtt \;research group}{Nov 2020 - now}{CMS Experiment, CERN, Geneva}{Since the beginning of my Ph.D., I have been part of the CMS \hhbbtt \, research group, focused on Higgs pair production (\(HH\)) searches through resonant mechanisms. The analysis considers \(X\) resonances of either spin 0 or spin 2, with masses ranging from 250 GeV to 3 TeV. The final state under investigation involves one Higgs boson decaying into two \(b\) quarks and the other into two \(\tau\) leptons (\hhbbtt). This search uses proton-proton collision data at a center-of-mass energy of \(\sqrt{s} = \SI{13}{\tera \electronvolt}\) collected at CMS, corresponding to an integrated luminosity of \(\SI{137.1}{\femto\barn^{-1}}\). This work builds on a previous search for non-resonant \(HH\) production via gluon-gluon fusion (GGF) and vector boson fusion (VBF), where I contributed by studying systematic uncertainties and performing limit extraction. After nearly a year of CMS review, the results are now public and are part of the combined \(HH\) results published by CMS in *Nature*, marking the 10th anniversary of the Higgs boson discovery. A more detailed description of the analysis is available in this paper of which I am co-author,\;\cite{bbttananote}.}
     \sepspace
 
     \NewPart{Other Work experience}
-	\EducationEntry{Private lessons for middle, high school and university students}{2012 -- now}{}{
+	\EducationEntry{Physics 1 Tutor for Engineering Students}{March -- June 2024}{}{
+		I worked as a tutor for classical mechanics (known as Physics 1 course) exercises for Engineering students, guiding problem-solving sessions and supporting students’ understanding of fundamental physics concepts throughout the semester.  }
+	\sepspace
+	\EducationEntry{Private lessons for middle, high school and university students}{2012 {--} now}{}{
 		Topics: Physics, Math and Calculus, Programming, Chemistry. }
 	\sepspace
-	\EducationEntry{Volunteering Activity}{2011}{Liceo Classico \openquote Istituto Pontano\closequote, Naples, Italy.}{After-school activity for disadvantaged children. } 
+	\EducationEntry{Volunteering Activity}{2011}{Liceo Classico \openquote Istituto Pontano\closequote, Naples, Italy.}{After-school activity for disadvantaged children. }
 	\sepspace
-	 % ------------------------------------- RESEARCH ACTIVITY ------------------------------------- 
+	 % ------------------------------------- RESEARCH ACTIVITY -------------------------------------
     \NewPart{Research activity}
-    \EducationEntry{Double Higgs production}{}{CMS Experiment, CERN, Geneva}{The HH production (resonant and non-resonant) is the key to probe different physics models. In the Standard Model (SM) the measurement of the Higgs self-coupling by this process allows to test the predictions of the SM. The statistics collected at the CMS experiment to date do not allow the observation of this process in SM because of the very low cross section. In other models beyond the standard model, the HH production originates from the decay of a heavy resonance or the production is non-resonant, but with kinematics and cross-section of the process different from the SM  predictions. For some values of the parameters of these models, the cross section of the HH  production is within reach of the the current statistics. Many final states can be studied and combined at the LHC to improve the sensitivity to HH production. I am currently working on the search for double Higgs resonant production in the \bbtt final state, meaning that one of the Higgs boson decays in a tau pair and the other in a pair of b quarks. This is one of the most sensitive channels. The analysis's main feature is the usage of two independent frameworks to perform the whole analysis, from the event selection to the statistical inference and limits on the resonance cross section: one is mostly developed by people from Milano Bicocca University, Hamburg University and LLR, and I am in charge of developing from the scratch the other framework, in order to perform independent analyses and compare the results. The framework I am developing uses state-of-art centrally provided tools by the CMS experiment, as the usage of new CMS data format (NanoAOD), ROOT RDataFrames and Luigi Analysis Workflow (LAW), which is an extension on top of the Luigi package, a Python based open source package for building complex pipelines initially developed from Spotify team, optimised for HEP analyses. I also worked on the non resonant analysis, giving a contribute in systematics error studies and limit extraction.}
+    \EducationEntry{Double Higgs production}{}{CMS Experiment, CERN, Geneva}{The production of Higgs boson pairs (both resonant and non-resonant) is crucial for probing various Beyond Standard Model (BSM) theories and provides access to the Higgs self-coupling in the Standard Model (SM). Although current CMS data lacks the statistics needed to measure this process directly in the SM context due to its low cross-section, it still allows upper limits to be set. As more data is collected in future LHC runs, a measurement will become feasible. In BSM scenarios, Higgs pair production may result from the decay of a heavy resonance or exhibit different kinematics and cross-sections than SM predictions, with certain parameter values making detection possible even with current statistics.
+	I am currently focused on searching for resonant Higgs pair production in the \bbtt final state, where one Higgs decays to \(\tau\)-leptons and the other to \(b\)-quarks, one of the most sensitive channels. This analysis uses two independent frameworks: one developed primarily by teams from the University of Milano Bicocca, Hamburg University, and LLR, and another framework that I am building from scratch for independent cross-checks. My framework incorporates advanced CMS tools such as the NanoAOD data format, ROOT RDataFrames, and the Luigi Analysis Workflow (LAW), which is an extension of the open-source pipeline tool from Spotify, optimized for high-energy physics analyses. Additionally, I contributed to the non-resonant HH analysis through systematic error studies and limit extraction.}
     \sepspace
     \EducationEntry{Study of Machine Learning techniques for $\tau_{h}$ identification and reconstruction}{}{CMS Experiment, CERN, Geneva}{I am contributing into the common CMS effort of improving the identification and reconstruction of the semi-leptonic decaying taus (the so-called ``hadronic tau'', indicated as $\tau_h$)  from the very first levels of the CMS offline trigger. I worked on the development of a Machine Learning (ML) algorithm, aiming to replace the cut-based initial selection at the CMS High Level Trigger (HLT) for hadronically decaying taus. The algorithm, named L2TauNNTag, showed better performances in terms of efficiency and purity with respect to the cut-based one and therefore it was integrated in all the trigger paths involving hadronic taus. Such triggers are applied to select events during the ongoing the Run\;3 data taking.}
     \sepspace
-    \EducationEntry{Model independent measurement of the top-related CKM matrix elements}{}{CMS Experiment, CERN, Geneva}{This is the topic of my master thesis. During my master thesis I was associated with the INFN sezione di Napoli and the CERN of Geneva, and I performed a direct and model independent measurement of the top-related CKM matrix elements. This measurement uses proton-proton collision data collected at the CMS experiment during the Run\;2, corresponding to an integrated luminosity of $\SI{36}{\femto\barn}^{-1}$ and at a centre-of mass energy of $\sqrt{s}=\SI{13}{\tera\electronvolt}$.   Single top quark electroweak production events in the \textit{t}-channel have been selected to infer the $|\text{V}_{\text{tq}}|$ matrix elements (with q=d,s,b flavour). The contributions I gave to the analysis have been to optimize the baseline top selection and to improve the signal extraction, exploiting in both cases ML techniques: in order to correctly identify top quarks by their decay products, independently on the production mechanism, I developed a ML top tagger. I compared this new tool with the previously adopted approach, which was based on a cut-based selection: the improvement provided by the ML techniques was noticeable and the ML output has been used to tag the events containing a top quark. In this phase, two ML algorithms have been tested: a Deep Neural Network (DNN) and a Boosted Decision Tree (BDT). The BDT performances showed the best top quark selection efficiency and background rejection power. Furthermore, for the first time ML techniques have been applied also for the signal extraction: a BDT has been trained to identify the single top quark t-channel events against the main background sources, and the BDT output has been used to perform the fit in order to provide an estimation of $|\text{V}_{\text{tb}}|$ and to set an upper limit to $|\text{V}_{\text{td}}|^{2}+|\text{V}_{\text{ts}}|^{2}$.}
+    \EducationEntry{Model independent measurement of the top-related CKM matrix elements}{}{CMS Experiment, CERN, Geneva}{TMy master’s thesis focused on a direct, model-independent measurement of the CKM matrix elements related to the top quark. Affiliated with INFN Naples and CERN, I conducted this analysis using proton-proton collision data from CMS Run 2, corresponding to an integrated luminosity of \(\SI{36}{\femto\barn^{-1}}\) at \(\sqrt{s}=\SI{13}{\tera\electronvolt}\). By selecting events from single top quark production in the \(t\)-channel, we aimed to determine the \( |\text{V}_{\text{tq}}| \) elements (for \(q = d, s, b\) flavors).
+	My contributions included optimizing top quark selection and enhancing signal extraction, both through machine learning (ML) techniques. I developed an ML-based top tagger to improve top quark identification across production modes, comparing Deep Neural Network (DNN) and Boosted Decision Tree (BDT) models; the BDT performed best for efficiency and background rejection. I also applied ML to signal extraction, training a BDT to distinguish \(t\)-channel events from backgrounds. This BDT output was then used to estimate \( |\text{V}_{\text{tb}}| \) and set an upper limit on \( |\text{V}_{\text{td}}|^{2} + |\text{V}_{\text{ts}}|^{2} \).}
     \vspace{-1mm}
     \sepspace   \vspace{2mm}
     \EducationEntry{Neutrino-argon interactions studies}{}{SBND Experiment, Fermilab, Batavia (IL)}{I worked for the SBND collaboration under the supervision of Prof. Ornella Palamara on the expected neutrino event rate at the SBND detector for its full exposure time. I focused on a specific final state topology in order to study the nuclear effects in neutrino-argon interactions. At the end of the work a final report has been written \cite{Fermilab_report}. }
     \sepspace
     \EducationEntry{Sensitivity studies for the DarkSide-20k experiment}{}{Darkside-20K experiment, LNGS, L'Aquila}{During my bachelor thesis work, in association with INFN Sezione di Napoli, I studied the interaction of a WIMP particle with different target materials (liquid argon and xenon) and its response in Darkside-20k, Darkside-50 and Xenon-1T detectors. I evaluated the sensitivity in a dark matter direct detection of the above-mentioned experiments in the case of null result, under zero background hypothesis, producing an exclusion plot.}
-    \sepspace 
-    % ------------------------------------- TALKS AND POSTERS ------------------------------------- 
+    \sepspace
+    % ------------------------------------- TALKS AND POSTERS -------------------------------------
 	\NewPart{Talks and posters}
-	\EducationEntry{The 17th International Workshop on Tau Lepton Physics (TAU2023)}{04 -- 08 Dec 2023}{University of Louisville, Louisville, Kentucky, USA}{Title of the talk: "Searches for New Physics that couple with third generation fermions". \cite{Tau2023}}
+	\EducationEntry{The 17th International Workshop on Tau Lepton Physics (TAU2023)}{04 {--} 08 Dec 2023}{University of Louisville, Louisville, Kentucky, USA}{Title of the talk: "Searches for New Physics that couple with third generation fermions". \cite{Tau2023}}
 	\sepspace
-	\EducationEntry{Poster at ESHEP2023: The 2023 European School of High-Energy Physics}{6 -- 19 Sep 2023}{Grenaa (Denmark)}{Poster title: Search for resonant di-Higgs production in the bbtautau final state at CMS and tau identification at the CMS HLT. \cite{ESHEP_Indico}}
+	\EducationEntry{Poster at ESHEP2023: The 2023 European School of High-Energy Physics}{6 {--} 19 Sep 2023}{Grenaa (Denmark)}{Poster title: Search for resonant di-Higgs production in the bbtautau final state at CMS and tau identification at the CMS HLT. \cite{ESHEP_Indico}}
 	\sepspace
-	\EducationEntry{CMS week}{19 -- 23 Sep 2022}{CERN, Geneva, Switzerland}{Tau trigger summary at the Tau POG meeting during the CMS week \cite{cmsWeek22}}
-	\sepspace 
-	\EducationEntry{HH2022: Higgs Hunting 2022}{12 -- 14 Sep 2022}{IJCLab, Paris (France)}{Title of the presentation at the Young Scientist Forum: Search for non-resonant Higgs boson pair production in the final state with two bottom quarks and two tau leptons \cite{HH2022}}
-	\sepspace	
+	\EducationEntry{CMS week}{19 {--} 23 Sep 2022}{CERN, Geneva, Switzerland}{Tau trigger summary at the Tau POG meeting during the CMS week \cite{cmsWeek22}}
+	\sepspace
+	\EducationEntry{HH2022: Higgs Hunting 2022}{12 {--} 14 Sep 2022}{IJCLab, Paris (France)}{Title of the presentation at the Young Scientist Forum: Search for non-resonant Higgs boson pair production in the final state with two bottom quarks and two tau leptons \cite{HH2022}}
+	\sepspace
 	\EducationEntry{Seminar for Phenomenology of Elementary Particle Physics beyond the Standard Model group}{13 Jul 2022}{Humboldt University / Zoom}{Statistical data analysis in experimental particle physics \cite{humbolt}}
-	\sepspace 
-	\EducationEntry{ICHEP2022: 41st International Conference on High Energy Physics}{6 -- 13 Jul 2022}{Bologna (Italy)}{Parallel talk: "Search for resonant and nonresonant di-Higgs boson production at CMS using jet substructure techniques" \cite{ICHEP}}
 	\sepspace
-	\EducationEntry{AnalisiDati@CMS Italia}{09 -- 11 Feb 2022}{Firenze, Italy}{Joint talk with F. Brivio regarding strategy for the \hhbbtt analysis \cite{analisidatifirenze}}
-	\sepspace 
-	\EducationEntry{CMS week}{ 6 -- 10 Dec 2021}{CERN/Zoom}{\vspace{-2mm}Title of the presentation: "New NN-based L2 tau tagging sequence" \cite{cmsweek21}}
+	\EducationEntry{ICHEP2022: 41st International Conference on High Energy Physics}{6 {--} 13 Jul 2022}{Bologna (Italy)}{Parallel talk: "Search for resonant and nonresonant di-Higgs boson production at CMS using jet substructure techniques" \cite{ICHEP}}
 	\sepspace
-	\EducationEntry{Poster at INFIERI International Summer School}{ 22 Aug -- 05 Sept 2021}{Universidad Autonoma de Madrid (UAM)}{Title of poster: \openquote A machine learning algorithm for tau leptons identification at L2 Trigger in the CMS experiment\closequote. Of the 37 posters on display, three best were selected by a panel of physicists \cite{infieri_poster}.\\ My poster was awarded as the third best poster by a jury of 14 physics doctors and professors.}
+	\EducationEntry{AnalisiDati@CMS Italia}{09 {--} 11 Feb 2022}{Firenze, Italy}{Joint talk with F. Brivio regarding strategy for the \hhbbtt analysis \cite{analisidatifirenze}}
 	\sepspace
-	\EducationEntry{106th National Congress of the Italian Physical Society}{14 -- 18 Sept 2020}{Zoom Only}{Title of the talk for the session of Nuclear and Subnuclear Physics: \openquote Measurements of the CKM matrix elements in single top events at CMS with machine learning techniques.\closequote \;\cite{CongresSIF}}
-	\sepspace	
-		% ------------------------------------- SCHOOLS ATTENDED  ------------------------------------- 
+	\EducationEntry{CMS week}{ 6 {--} 10 Dec 2021}{CERN/Zoom}{\vspace{-2mm}Title of the presentation: "New NN-based L2 tau tagging sequence" \cite{cmsweek21}}
+	\sepspace
+	\EducationEntry{Poster at INFIERI International Summer School}{ 22 Aug {--} 05 Sept 2021}{Universidad Autonoma de Madrid (UAM)}{Title of poster: \openquote A machine learning algorithm for tau leptons identification at L2 Trigger in the CMS experiment\closequote. Of the 37 posters on display, three best were selected by a panel of physicists \cite{infieri_poster}.\\ My poster was awarded as the third best poster by a jury of 14 physics doctors and professors.}
+	\sepspace
+	\EducationEntry{106th National Congress of the Italian Physical Society}{14 {--} 18 Sept 2020}{Zoom Only}{Title of the talk for the session of Nuclear and Subnuclear Physics: \openquote Measurements of the CKM matrix elements in single top events at CMS with machine learning techniques.\closequote \;\cite{CongresSIF}}
+	\sepspace
+		% ------------------------------------- SCHOOLS ATTENDED  -------------------------------------
 	\NewPart{Schools attended}
-	\EducationEntry{ESHEP2023: The 2023 European School of High-Energy Physics}{6 -- 19 Sep 2023}{Grenaa (Denmark)}{The ESHEP school is a CERN based summer school with a wide HEP physics program divided in about 33 lectures, each lasting about 90 minutes including time for questions. Together with the lectures, a complementary parallel group discussion sessions most afternoons were carried on. The programme includes a short course on science communications and outreach. In addition, there will be group project work based on an outreach theme. \cite{eshep}\\The certificate of attendance is available in \cite{eshep_cert}.}
+	\EducationEntry{ESHEP2023: The 2023 European School of High-Energy Physics}{6 {--} 19 Sep 2023}{Grenaa (Denmark)}{The ESHEP school is a CERN based summer school with a wide HEP physics program divided in about 33 lectures, each lasting about 90 minutes including time for questions. Together with the lectures, a complementary parallel group discussion sessions most afternoons were carried on. The programme includes a short course on science communications and outreach. In addition, there will be group project work based on an outreach theme. \cite{eshep}\\The certificate of attendance is available in \cite{eshep_cert}.}
 	\sepspace
-	\EducationEntry{INFN School of Statistics 2022}{15 -- 20 May 2022}{Paestum, Italy}{
-The INFN School of Statistics intends to provide an overview of statistical methods and tools used in particle, astro-particle and nuclear physics. This School is targeted towards physicists interested in data analysis ranging from PhD students to senior physicists willing to extend their knowledge and skills in the field of statistical methods. The School takes place in Paestum (Salerno, Italy) from 15th to 20th of May 2022. Lectures are subdivided into five sections: the first section will be an introduction to probability theory, including fundamental definitions of frequentist and Bayesian approaches to probability. The second section is devoted to statistical methods, including parameter estimates, maximum likelihood and chi-squared methods. The third section will provide an overview of statistical methods adopted to define confidence intervals and upper limits. The fourth section will cover multivariate techniques, including artificial neural networks and boosted decision trees. Finally, the fifth section will present the state-of-the-art software tools used for statistical evaluations with interactive exercises. \cite{statschool}}
+	\EducationEntry{INFN School of Statistics 2022}{15 {--} 20 May 2022}{Paestum, Italy}{
+		The INFN School of Statistics offers a comprehensive overview of statistical methods and tools used in particle, astro-particle, and nuclear physics. The lectures are organized into five sections: an introduction to probability theory covering both frequentist and Bayesian approaches; statistical methods, including parameter estimation, maximum likelihood, and chi-squared techniques; methods for defining confidence intervals and upper limits; multivariate techniques such as neural networks and boosted decision trees; and hands-on sessions with software tools for statistical analysis.. \cite{statschool}}
 	\sepspace
 	\EducationEntry{INFIERI hands-on Lab: \\ Introduction to Semiconductor Detectors for HEP with the EASy}{03 Sept 2021}{Universidad Autonoma de Madrid (UAM)}{During the INFIERI Summer School I attended an hands-on lab: \textit{introduction to Semiconductor Detectors for High-Energy Physics with the Educational Alibava System EASy}. The lab focused on the study of basic principles of silicon strip sensors and the signal they produce when a particle traverses them. At the end of the lab a certificate has been issued \cite{Easy_Certificate}.}
-    \sepspace 	
-	\EducationEntry{VI edition of the INFIERI Summer School}{ 22 Aug -- 05 Sept 2021 }{Universidad Autonoma de Madrid (UAM)}{The INtelligent signal processing for FrontIer Research and Industry (INFIERI) is focused on the most advanced technologies in the fields of microelectronics, real-time signal processing, massively parallel computing and on the physics motivations that require confronting these technological challenges for building the needed new instruments. \\ During the school, lectures have been attended, together with a wide variety of hands-on lab works in many cross-disciplinary example applications drawn from the exploration of distant universe, through medical imaging of the human body, to exploration of the elementary particle world and fall backs on the daily-life, and on new energies. \cite{INFIERI}}
-    \sepspace 
-    \EducationEntry{XXIV CMS Data Analysis School}{5 -- 16 Jan 2021}{LHC Physics Center, Fermilab, Batavia (IL)}{Hands-on data analysis school, where eighty per cent of school time is devoted to a series of hands-on exercises, first introducing participants to the tools of data analysis and then later devoted to performing detailed physics measurements with real CMS data in a 2.5 day intensive period by focused teams of about 6-8 students with a close to one-to-one ratio between students and experts, also known as facilitators. The conference has been attended online due to COVID-19 emergency \cite{cmsdasindico}. The participation certificate can be found in \cite{cmsdas}.}
-	\sepspace	
-	\EducationEntry{Fermilab Summer School}{Jul -- Sept 2018}{SBND Experiment, Fermilab, Batavia (IL)}{I was selected for the DOE and INFN-funded "Summer Student Exchange program", and I spent two months at the Fermilab laboratory in Batavia (USA) working for the SBND collaboration under the supervision of Prof. Ornella Palamara on the expected neutrino event rate at the SBND detector for its full exposure time. I focused on a specific final state topology in order to study the nuclear effects in neutrino-argon interactions. At the end of the work a final report has been written \cite{Fermilab_report}. \\ \noindent This work has been evaluated as an exam which has been passed with 30/30 cum laude \cite{partecip_fermilab}.}
     \sepspace
-    \EducationEntry{``Re-writing Nuclear Physics textbooks: \\ 30 years of radioactive ion beam physics'' Summer school}{19 -- 25 Jul 2015}{Università di Pisa}
+	\EducationEntry{VI edition of the INFIERI Summer School}{ 22 Aug {--} 05 Sept 2021 }{Universidad Autonoma de Madrid (UAM)}{The INtelligent signal processing for FrontIer Research and Industry (INFIERI) is focused on the most advanced technologies in the fields of microelectronics, real-time signal processing, massively parallel computing and on the physics motivations that require confronting these technological challenges for building the needed new instruments. During the school, lectures have been attended, together with a wide variety of hands-on lab works in many cross-disciplinary example applications drawn from the exploration of distant universe, through medical imaging of the human body, to exploration of the elementary particle world and fall backs on the daily-life, and on new energies. \cite{INFIERI}}
+    \sepspace
+    \EducationEntry{XXIV CMS Data Analysis School}{5 {--} 16 Jan 2021}{LHC Physics Center, Fermilab, Batavia (IL)}{Hands-on data analysis school, where eighty per cent of school time is devoted to a series of hands-on exercises, first introducing participants to the tools of data analysis and then later devoted to performing detailed physics measurements with real CMS data in a 5-8 day intensive period by focused teams of about 6-8 students with a close to one-to-one ratio between students and experts, also known as facilitators. The conference has been attended online due to COVID-19 emergency \cite{cmsdasindico}. The participation certificate can be found in \cite{cmsdas}.}
+	\sepspace
+    \EducationEntry{``Re-writing Nuclear Physics textbooks: \\ 30 years of radioactive ion beam physics'' Summer school}{19 {--} 25 Jul 2015}{Università di Pisa}
 	{I attended, as a Summer Student, a series lectures which covered topics about standard Nuclear Physics. The participation certificate can be found in \cite{summer_school_pisa}.}
 
-	    % ------------------------------------- CONFERENCES ATTENDED ------------------------------------- 	
+	    % ------------------------------------- CONFERENCES ATTENDED -------------------------------------
 	\NewPart{Conferences and Workshop attended}
-	\EducationEntry{GravityShapePisa (GRASP) 2023}{24 -- 27 Oct 2022}{Pisa, Italy}{GravityShapePisa(GraSP) is the 2nd International Conference completely organized by Young Researchers which supports the active participation of Young Researchers. The aim of the conference is to gather theoretical and observational researches from different international groups to discuss new challenges in gravity phenomenology at different curvature scales. The indico page can be found in \cite{grasp}.} 
+	\EducationEntry{GravityShapePisa (GRASP) 2023}{24 {--} 27 Oct 2022}{Pisa, Italy}{GravityShapePisa(GraSP) is the 2nd International Conference completely organized by Young Researchers which supports the active participation of Young Researchers. The aim of the conference is to gather theoretical and observational researches from different international groups to discuss new challenges in gravity phenomenology at different curvature scales. The indico page can be found in \cite{grasp}.}
 	\sepspacesmall
-	\EducationEntry{CMS Italia National Meeting}{18 -- 20 Oct 2023}{Turin, Italy}{Annual meeting of the Italian community of the CMS experiment. The indico page can be found in \cite{cmsItalia2023}.} 
+	\EducationEntry{CMS Italia National Meeting}{18 {--} 20 Oct 2023}{Turin, Italy}{Annual meeting of the Italian community of the CMS experiment. The indico page can be found in \cite{cmsItalia2023}.}
 	\sepspacesmall
-	\EducationEntry{Higgs 2022}{6 -- 11 Nov 2022}{Pisa, Italy}{The conference focuses on new experimental and theoretical results on the Higgs boson. Latest measurement of the Higgs boson properties and recent theoretical developments in the  Higgs boson sector, in the Standard Model and in physics Beyond the Standard Model will be presented and discussed at the Conference. The indico page can be found in \cite{Higgs22}.} 
+	\EducationEntry{Higgs 2022}{6 {--} 11 Nov 2022}{Pisa, Italy}{The conference focuses on new experimental and theoretical results on the Higgs boson. Latest measurement of the Higgs boson properties and recent theoretical developments in the  Higgs boson sector, in the Standard Model and in physics Beyond the Standard Model will be presented and discussed at the Conference. The indico page can be found in \cite{Higgs22}.}
 	\sepspacesmall
-	\EducationEntry{CMS Italia National Meeting}{26 -- 28 Sept 2022}{Florence, Italy}{Annual meeting of the Italian community of the CMS experiment. The indico page can be found in \cite{cmsItalia2022}.} 
+	\EducationEntry{CMS Italia National Meeting}{26 {--} 28 Sept 2022}{Florence, Italy}{Annual meeting of the Italian community of the CMS experiment. The indico page can be found in \cite{cmsItalia2022}.}
 	\sepspacesmall
-	\EducationEntry{Higgs@CMS Italia workshop}{11 -- 12 May 2022}{CERN, Geneva, Switzerland}{Meeting of the Italian community of the CMS experiment working on Higgs physics. The indico page can be found in \cite{HigCMSItalia}}
+	\EducationEntry{Higgs@CMS Italia workshop}{11 {--} 12 May 2022}{CERN, Geneva, Switzerland}{Meeting of the Italian community of the CMS experiment working on Higgs physics. The indico page can be found in \cite{HigCMSItalia}}
 	\sepspacesmall
-	\EducationEntry{2022 Higgs workshop}{28 -- 30 March 2022}{CERN, Geneva, Switzerland}{Three-day workshop of the CMS Higgs group. We currently plan the workshop as a hybrid workshop, with in-person attendance at CERN possible. Depending on the CERN covid restrictions, capacity in the conference rooms may be limited, and/or we may have to revert to a fully virtual workshop. \cite{2022HiggsWorkshop}}
-	\EducationEntry{Higgs 2021}{18 -- 22 Oct 2021}{Zoom}{Annual conference devoted to new experimental and theoretical results on the Higgs boson. \\The conference has been attended online due to the COVID-19 emergency. \cite{Higgs_2021}} %The 2021 conference presented the latest results from the LHC on the Higgs boson mass, spin/parity, couplings and new theoretical work devoted to the measurement of Higgs parameters and possibilities for exotic Higgs decays,with discussions  of the current strategies for studying the Higgs boson at the LHC and the next steps beyond the LHC.\cite{Higgs_2021}.}
+	\EducationEntry{2022 Higgs workshop}{28 {--} 30 March 2022}{CERN, Geneva, Switzerland}{Three-day workshop of the CMS Higgs group. We currently plan the workshop as a hybrid workshop, with in-person attendance at CERN possible. Depending on the CERN covid restrictions, capacity in the conference rooms may be limited, and/or we may have to revert to a fully virtual workshop. \cite{2022HiggsWorkshop}}
+	\EducationEntry{Higgs 2021}{18 {--} 22 Oct 2021}{Zoom}{Annual conference devoted to new experimental and theoretical results on the Higgs boson. \\The conference has been attended online due to the COVID-19 emergency. \cite{Higgs_2021}} %The 2021 conference presented the latest results from the LHC on the Higgs boson mass, spin/parity, couplings and new theoretical work devoted to the measurement of Higgs parameters and possibilities for exotic Higgs decays,with discussions  of the current strategies for studying the Higgs boson at the LHC and the next steps beyond the LHC.\cite{Higgs_2021}.}
 	\sepspacesmall
-	\EducationEntry{CMS Italia National Meeting}{11 -- 13 Oct 2021}{Naples}{The participation certificate can be found in \cite{CMS_it2021}.} 
+	\EducationEntry{CMS Italia National Meeting}{11 {--} 13 Oct 2021}{Naples}{The participation certificate can be found in \cite{CMS_it2021}.}
 	\sepspacesmall
-	\EducationEntry{PyHEP 2021 Workshop}{05 -- 09 July 2021}{CERN, Geneva}{The PyHEP workshops are a series of workshops initiated and supported by the HEP Software Foundation (HSF) with the aim to provide an environment to discuss and promote the usage of Python in the HEP community at large. Further information is given on the PyHEP Working Group website.\\ The tutorial has been attended online due to COVID-19 emergency. \cite{pyHEP}}
+	\EducationEntry{PyHEP 2021 Workshop}{05 {--} 09 July 2021}{CERN, Geneva}{The PyHEP workshops are a series of workshops initiated and supported by the HEP Software Foundation (HSF) with the aim to provide an environment to discuss and promote the usage of Python in the HEP community at large. Further information is given on the PyHEP Working Group website.\\ The tutorial has been attended online due to COVID-19 emergency. \cite{pyHEP}}
 	\sepspacesmall
-	\EducationEntry{The 11th CMS Induction Course}{10 -- 12 March 2021}{CMS Experiment, CERN, Geneva}{The CMS Induction Course is envisaged for newcomers and those who have been in CMS for some time - both students and more experienced collaborators. The course has been attended online due to COVID-19 emergency. \cite{induction} }
+	\EducationEntry{The 11th CMS Induction Course}{10 {--} 12 March 2021}{CMS Experiment, CERN, Geneva}{The CMS Induction Course is envisaged for newcomers and those who have been in CMS for some time - both students and more experienced collaborators. The course has been attended online due to COVID-19 emergency. \cite{induction} }
 	\sepspacesmall
-	\EducationEntry{CMS Italia National Meeting}{13 -- 15 Nov 2019}{Bari}{Annual meeting of the Italian community of the CMS experiment. The participation certificate can be found in \cite{CMSit_2019}.} 
+	\EducationEntry{CMS Italia National Meeting}{13 {--} 15 Nov 2019}{Bari}{Annual meeting of the Italian community of the CMS experiment. The participation certificate can be found in \cite{CMSit_2019}.}
 	\sepspacesmall
-	\NewPart{Publications}{} 
-    \EducationEntry{Co-author of 257 publications}{Feb 2021 - now}{CMS Experiment, CERN, Geneva}{h-index $=44$. Of those papers, one is single author. Another publication is ongoing. Publication list on inspire HEP can be found in \cite{publications}. \\}
+	\NewPart{Publications}{}
+    \EducationEntry{Co-author of 274 publications}{Feb 2021 - now}{CMS Experiment, CERN, Geneva}{h-index $=45$. Of those papers, one is single author. Another publication, the proceeding of the Tau2023 conference, is in the review process. Publication list on inspire HEP can be found in \cite{publications}. \\}
      \sepspacesmall
     \EducationEntry{Co-author of paper}{ }{CMS Experiment, CERN, Geneva}{The paper describes the search for Higgs boson pair production in the bb$\tau\tau$ final state at the with LHC proton-proton collision data collected between 2016 and 2018 at the CMS Experiment, with centre of mass energy of $\sqrt{s} = 13\,$TeV. \cite{bbttananote}}
      \sepspacesmall
@@ -272,31 +275,31 @@ The INFN School of Statistics intends to provide an overview of statistical meth
      \sepspacesmall
      \EducationEntry{Outreach prize at ESHEP}{21 Sep 2023}{Grenaa, Denmark}{During the ESHEP school \cite{eshep}, the students in each discussion group participated in a collaborative project on an outreach theme, leading up to a presentation by a group representative in a dedicated session at the end of the School. The group I was into was nominated the best in outreach presentation, ideas and scientific communication. The recording of the demonstration can be found in \cite{neutrinoprese}. I took actively part to the outreach project design and implementation.}
      \sepspacesmall
-     \EducationEntry{Tutor at Masterclass CMS Pisa 2023}{21 March 2023}{Pisa}{The initiative called "International Masterclass" in elementary particle physics, an initiative of IPPOG (International Particle-Physics Outreach Group) now in its sixteenth edition, coordinated at the European level by the "European Physical Society," and organized locally by the Pisa section of the National Institute of Nuclear Physics and the Department of Physics of the University of Pisa, will take place again in 2023. This year the event will finally be in attendance. Designed to provide an opportunity for secondary school students to discover the world of particle physics in person, the International Masterclasses involve about 10000 students from 37 countries. Each of the 160 participating universities or research centers will organize a "full immersion" day of lectures, exercises and measurements of physical quantities using real experiment data from international laboratories. Students carried out a hands-on computer exercise with the help of tutors. I was one of the tutors and I helped help the students who were attending the masterclass with the exercise and chaired the discussion of the results. \cite{masterclasspisa}}
+     \EducationEntry{Tutor at Masterclass CMS Pisa 2023}{21 March 2023}{Pisa}{The "International Masterclass" in elementary particle physics, organized by IPPOG and coordinated by the European Physical Society, will return in 2023 with an in-person format. Locally organized by INFN Pisa and the University of Pisa’s Physics Department, the event aims to introduce high school students to particle physics. This year, approximately 10,000 students from 37 countries will participate across 160 universities and research centers, each hosting a day of lectures, exercises, and data analysis using real experimental data. As a tutor, I assisted students with the exercises and led the discussion of their results. \cite{masterclasspisa}}
      \sepspacesmall
-     \EducationEntry{Cern official guide}{May 2022 -- now}{Pisa}{I attended trainings to become a CERN official guide and I am now one of the gudies that can bring visitors to the following visit points: SyncroCyclothron (building 300 at CERN Meyrin's site), Low Energy Ion Ring (LEIR), Antimatter Decelerator (AD) facility, Cern Control Centre (CCC), Data Centre Visitor Point (DCVP), Atlas Visitor Point (AVP). I attended the trainings also for LHCb surface visitor point and the CMS cavern, but still need to finish some mandatory trainings needed to enter the CMS Underground Area.}
+     \EducationEntry{Cern official guide}{May 2022 {--} now}{Pisa}{I attended trainings to become a CERN official guide and I am now one of the gudies that can bring visitors to the following visit points: SyncroCyclothron (building 300 at CERN Meyrin's site), Low Energy Ion Ring (LEIR), Antimatter Decelerator (AD) facility, Cern Control Centre (CCC), Data Centre Visitor Point (DCVP), Atlas Visitor Point (AVP). I attended the trainings also for LHCb surface visitor point and the CMS cavern, but still need to finish some mandatory trainings needed to enter the CMS Underground Area.}
      \sepspacesmall
     \EducationEntry{Partecipation at "Bright - Night of Researchers" }{24 Sep 2021}{Pisa}{I took actively part in the "Night of Researchers" by attending and setting up stands dedicated to high energy physics. I have participated as a representative of the CMS group of the University of Siena and the INFN of Pisa, creating posters and brochures and preparing and attending the stands in Pisa.}
      \sepspacesmall
-	\EducationEntry{\openquote Tetravalente$\_$ \closequote $\;$Instagram account}{June, 2020 -- June 2023}{Social media outreach}{
-	I share an Instagram account with three high school friends of mine. In this account, named \openquote Tetravalente$\_$ \closequote $\;$ we promote cultural relevance of Physics, Chemistry, Biology, Medicine, Psychology and Marketing. We aim to cover a wide variety of topics, according to our research fields, in order to exploit social network for didactic purposes. With this project we found a way to communicate the passion we deliver in our research fields through one of the most popular social networks \cite{tetravalente}.\\}
+	\EducationEntry{\openquote Tetravalente$\_$ \closequote $\;$Instagram account}{June, 2020 {--} June 2023}{Social media outreach}{
+	I shared an Instagram account with three high school friends of mine with outreach purposes, focused on Physics, Chemistry, Biology, Medicine, Psychology and Marketing. We aimed to cover a wide variety of topics, according to our research fields, in order to exploit social network for didactic purposes. With this project we found a way to communicate the passion we deliver in our research fields through one of the most popular social networks \cite{tetravalente}.\\}
      \sepspacesmall
 	\EducationEntry{Science outreach activities organized by PONYS.}{2016 - 2019}{Member of PONYS organization}{The Physics and Optics Naples Young Students (PONYS) is a no-profit cultural association, composed by bachelor and master students, PhDs and Post-Docs of the Physics Department of Università degli studi di Napoli \openquote Federico II\closequote, Naples, Italy. I took actively part in many public events aimed at promoting the cultural relevance of physics, inside and outside the academia.
 	}
      \sepspacesmall
 	%\\ \\
 	%\EducationEntry{Fattorie Didattiche}{ May 2018, May 2019}{Naples, Italy}{}
-	%\EducationEntry{Parco Avventura Scientifico}{ May, Jun 2017}{Naples, Italy}{} 
-	%\EducationEntry{Futuro Remoto}{Oct 2016, Jun 2017}{Naples, Italy}{} 
+	%\EducationEntry{Parco Avventura Scientifico}{ May, Jun 2017}{Naples, Italy}{}
+	%\EducationEntry{Futuro Remoto}{Oct 2016, Jun 2017}{Naples, Italy}{}
 	%\EducationEntry{Passione Fisica}{Apr 2016}{Città della Scienza, Naples, Italy}{}
 	%%% References
 	%%% ------------------------------------------------------------
-	
-    
-    
+
+
+
 	%%% Skills
 	%%% ------------------------------------------------------------
-	
+
     \sepspacesmall
 	\NewPart{Computer skills}
 	\SkillsEntry{Programming Languages}{C/C\texttt{++}, Python,  shell (bash, zsh, csh), MatLab}
@@ -306,12 +309,12 @@ The INFN School of Statistics intends to provide an overview of statistical meth
 	\SkillsEntry{Scientific Software}{CMS experiment framework, \texttt{CMSSW}}
      \sepspacesmall
 	\SkillsEntry{Operative}{Microsoft Windows OS, Linux/Unix, Mac OSX}
-	\SkillsEntry{Systems}{}  \vspace{2mm}	
+	\SkillsEntry{Systems}{}  \vspace{2mm}
 	%\SkillsEntry{}{}
  \noindent	I have an advanced knowledge of the C++ and Python programming languages, a basic knowledge of MatLab one. \\ For my phs, master and bachelor theses work I largely used the \texttt{ROOT} framework to analyze data. In particular, during my master thesis the \texttt{Keras} and \texttt{XGBoost} libraries in order to build machine learning algorithms. \\ During the first year of Ph.D. I developed a Convolutional Neural Network for L2 tau identification exploiting the \texttt{TensorFlow} and \texttt{Keras} libraries.\\
- 	
+
      \sepspacesmall
- 	
+
  	\NewPart{Language Skills\footnote{G\lowercase{rades in tables are self-certified.}}}
 	\SkillsEntry{\textbf{Italian}}{native speaker}\vspace{3mm}
 	\sepspace
@@ -328,11 +331,11 @@ The INFN School of Statistics intends to provide an overview of statistical meth
 	\end{table} }
 	\sepspace
 	\SkillsEntry{\textbf{Spanish}}{
-	
+
 	\begin{table}[h]
 		\vspace{-8.05mm}\qquad \qquad \qquad \qquad \qquad
 		\begin{tabular}{cccc}
-		
+
 			Reading & Listening & Speaking & Writing  \\
 			\midrule
 			A1 & A2 & A1 & A1 \\
@@ -340,11 +343,11 @@ The INFN School of Statistics intends to provide an overview of statistical meth
 		\end{tabular}
 	\end{table}}
 	In June 2018 I obtained the First Cambridge English certificate.\; \cite{certificato_inglese}
-	\sepspace 
+	\sepspace
 	\NewPart{Personal Skills}{}
 	\SkillsEntry{Work:}{\hspace{-1.9cm} Proactive, organized, analytic, adaptable to different working environments and conditions, good team spirit, remarkable leading ability. I have a strong passion for physics and this reflects in the eager to understand problems and find solutions in conventional and unconventional ways. Good critical spirit.}
 	\SkillsEntry{}{}
-	\SkillsEntry{Writing:}{\hspace{-1.55cm} Good writing skills.} 
+	\SkillsEntry{Writing:}{\hspace{-1.55cm} Good writing skills.}
 	\SkillsEntry{}{}
 	\SkillsEntry{Communication: }{\hspace{-.38cm} Good communication and interaction skills.\\}
 	\SkillsEntry{Out of Work: }{\hspace{-.8cm} My main interests are: science outreach, in particular I am fascinated by the application of science in all-day life. I love dogs and I would like to become a volunteer for a kennel. In particular I am very fascinated by dog breeding history. I like beer tasting, and exploring new beer types. I took part to some beers "remote tasting" organized by a brewery in Pisa. I appreciate trekking activities, in my free time I like to go on outings. I love to travel and explore new places and cultures. During last years I developed a strong passion for indoor and outdoor climbing.}
@@ -354,106 +357,106 @@ The INFN School of Statistics intends to provide an overview of statistical meth
 \textbf{I, the undersigned, Valeria D'Amante, declare that all the information provided in this list is accurate.}
 
 \begin{flushright}
-                \textit{Valeria D'Amante}   \\  
+                \textit{Valeria D'Amante}   \\
                 \textit{December, 2023}\\ \vspace{5mm}
-                
+
                 \includegraphics[scale=0.25]{firmavd.png}
-            \end{flushright} 
+            \end{flushright}
 
 
 	\newpage
-	
-	
+
+
 %	\NewPart{Other informations}
 %	\EducationEntry{Italian Driver License}{October 2012}{}{}
-	
-	 
+
+
 	\NewPart{Attached Documents}
 	 \renewcommand{\section}[2]{}%
 	\bibliographystyle{unsrt}
 	\begin{thebibliography}{9}
-	 
+
 	 	\bibitem{thesis}{\href{https://drive.google.com/file/d/1ZZgOBJDld1DjiXGkmRjE_aqsbgZV_muQ/view?usp=sharing}{Master Thesis}, 2020.}
-	 	
+
 	 	\bibitem{diploma_supplement}{\href{https://drive.google.com/file/d/1YPkm8Cbht1MudbtXyQuWvMoRzGUYcM4U/view?usp=drive_link}{Diploma Supplement UniNa}, 2020.}
-        
+
         \bibitem{partecip_fermilab}{\href{https://drive.google.com/file/d/1tOW1qfc4J9tCNj4elFH-scYQdPN_BmqB/view?usp=sharing}{Fermilab Summer School certificate of attendance}, 2018.}
-        
+
         \bibitem{bbttananote}{\href{https://www.sciencedirect.com/science/article/pii/S0370269322006657}{Search for nonresonant Higgs boson pair production in final state with two bottom quarks and two tau leptons in proton-proton collisions at s=13 TeV.}}
         \bibitem{Fermilab_report}{\href{https://www.dropbox.com/s/25yh63whshgdv08/Fermilab$\%$20Summer$\%$20School$\%$20final$\%$20report..pdf?dl=0}{Fermilab Summer School final report}, 2018.}
-        
+
         \bibitem{Tau2023}\href{https://indico.cern.ch/event/1303630/timetable/?view=standard#84-searches-for-new-physics-th}{The 17th International Workshop on Tau Lepton Physics (TAU2023).}
-        
+
 		\bibitem{ESHEP_Indico}{\href{https://indico.cern.ch/event/1321736/contributions/5585067/}{Search for resonant di-Higgs production in the bbtautau final state at CMS and tau identification at the CMS HLT. Note: CERN credentials needed to access this page.}}
-        
+
 		\bibitem{cmsWeek22}{\href{https://indico.cern.ch/event/1197016/#5-tau-trigger-summary}{Tau trigger summary, 22/09/2022. Note: CERN credentials needed to access this page.}}
-		
+
 		\bibitem{HH2022}{\href{https://indico.cern.ch/event/1195564/#33-ysf-search-for-non-resonant}{Higgs Hunting 2022. Note: CERN credentials needed to access this page.}}
-		
+
 		\bibitem{humbolt}{\href{https://www.physik.hu-berlin.de/de/pep/seminars/summer-term-2022}{Humboldt seminars schedule}}
-				
+
 		\bibitem{ICHEP}{\href{https://agenda.infn.it/event/28874/timetable/?view=standard#180-search-for-resonant-and-no}{ICHEP 2022}}
-		
+
 		\bibitem{analisidatifirenze}{\href{https://indico.cern.ch/event/1107463/timetable/?view=standard#5-hh-bbtautau}{analisi dati @ CMS Italia. Note: CERN credentials needed to access this page.}}
-		
+
 		\bibitem{cmsweek21}{\href{https://indico.cern.ch/event/1100484/#2-new-nn-based-l2-tau-tagging}{New NN-based L2 tau tagging sequence. Note: CERN credentials needed to access this page.}}
-		
+
 		 \bibitem{infieri_poster}{\href{https://indico.cern.ch/event/850479/timetable/?view=standard#127-a-machine-learning-algorit}{A machine learning algorithm for tau leptons identification at L2 Trigger in the CMS experiment.}}
-		 
+
 		\bibitem{CongresSIF}{\href{https://agenda.infn.it/event/23656/contributions/120259/}{106 Congresso SIF Indico Page.}}
-		
+
 		\bibitem{eshep}{\href{https://indico.cern.ch/event/1256499/}{2023 European School of High Energy Physics}}
-		
+
 		\bibitem{eshep_cert}{\href{https://drive.google.com/file/d/1oyeDcOGJAJENBG90vGbvFY4gNUhW6zmW/view?usp=drive_link}{ESHEP certificate of attendance.}}
 		\bibitem{statschool}{\href{https://agenda.infn.it/event/28039/timetable/?view=standard}{INFN School of Statistics 2022.}}
-		
+
         \bibitem{Easy_Certificate}{\href{https://drive.google.com/file/d/13OEoe41DZuXRQM2f9a09ZUdoX4nKdcEV/view?usp=sharing}{Introduction to Semiconductor Detectors for High-Energy Physics with the EASy.}}
-        
+
         \bibitem{INFIERI}{\href{https://drive.google.com/file/d/1fvgsEG4d7Cmx5HKmQcnvbEyIzz1xWNhV/view?usp=sharing}{INFIERI Certificate of Attendance.}}
-        
+
          \bibitem{cmsdasindico}{\href{https://indico.cern.ch/event/966368/}{XXIV CMS Data Analysis School indico page. Note: CERN credentials needed to access this page.}}
-         
+
           \bibitem{cmsdas}{\href{https://drive.google.com/file/d/1XKo8Vblw8BufA4RoA3SgQGgt6H6JRbuo/view?usp=drive_link}{XXIV CMS Data Analysis School certificate of attendance}, 2021.}
-          
+
         \bibitem{summer_school_pisa}{\href{https://drive.google.com/file/d/13aeTuc7uszZ8LCWsbz9r-WgBLzqpdtXH/view?usp=drive_link}{\openquote Re-writing Nuclear Physics textbooks: 30 years of radioactive ion beam physics.\closequote\;partecipation document}, 2015.}
-        
+
 		\bibitem{grasp}{\href{https://agenda.infn.it/event/35400/}{GravityShapePisa: New Frontiers in Gravity Phenomenology}}
-		
+
 		\bibitem{cmsItalia2023}{\href{https://agenda.infn.it/event/36815/timetable/?view=standard}{CMS Italia 2023. Note: CERN credentials needed to access this page.}}
-		
+
 		\bibitem{Higgs22}{\href{https://indico.cern.ch/event/1086716/}{Higgs 2022}}
-		
+
 		\bibitem{cmsItalia2022}{\href{https://agenda.infn.it/event/31737/}{CMS Italia 2022. Note: CERN credentials needed to access this page.}}
 
 		\bibitem{HigCMSItalia}{\href{https://indico.cern.ch/event/1137095/}{Workshop Higgs @ CMS Italia. Note: CERN credentials needed to access this page.}}
 
 		\bibitem{2022HiggsWorkshop}{\href{https://indico.cern.ch/event/1133134/timetable/}{2022 Higgs workshop. Note: CERN credentials needed to access this page.}}
-		
+
         \bibitem{Higgs_2021}{\href{https://indico.cern.ch/event/1030068/}{Higgs 2021 Online conference.}}
-        
+
         \bibitem{CMS_it2021}{
         \href{https://drive.google.com/file/d/1nyid6KknomCmQk9BEwtbTmx49mqUlxIt/view?usp=sharing}{CMS Italia 2021 certificate of attendance}, 2021.}
-        
+
         \bibitem{pyHEP}{\href{https://indico.cern.ch/event/1019958/}{pyHEP Workshop indico page}, 2021.}
-        
+
         \bibitem{induction}{\href{https://indico.cern.ch/event/1004951/}{11th CMS induction course indico page. Note: CERN credentials needed to access this page.}}
-        
+
         \bibitem{CMSit_2019}{\href{https://drive.google.com/file/d/16mvmSONiUjkaKVMfNPVo-SpwYz0vaOqH/view?usp=sharing}{CMS Italia 2019 certificate of attendance}, 2019.}
-	 	
+
 	    \bibitem{publications}{\href{https://inspirehep.net/authors/1821915}{Inspire-hep profile.}}
-	    
+
 	    \bibitem{bright2023}{\href{https://www.bright-night.it/2023/dettaglio-programma-serale-pre-linfn-pisa-ed-il-dipartimento-di-fisica/}{Bright 2023}}
-	    
+
 	    \bibitem{neutrinoprese}{\href{https://indico.cern.ch/event/1256499/timetable/?view=standard#40-group-b-neutrino-flavour-ph}{Neutrino flavour physics (CP violation, oscillations, …) Outreach project}}
-	    
+
 	    \bibitem{masterclasspisa}{\href{https://agenda.infn.it/event/34566/}{Masterclass CMS Pisa 2023}}
-		
+
 		\bibitem{tetravalente}{\href{https://www.instagram.com/tetravalente_/}{Tetravalente$\_$ Instagram account}, 2018.}
-		
+
 		\bibitem{certificato_inglese}{\href{https://drive.google.com/file/d/1qeYTO85SgLgw0MoQUgAc2lXDHNO3B4tn/view?usp=drive_link}{Cambridge English Certificate}, 2018.}
 
-		
-		
+
+
 		\end{thebibliography}
 
 
