@@ -1,0 +1,16 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+# *.pdf
+*.png
+*.zip
+*.synctex.gz
+*.xmpi
+*.docx
+.DS_Store
+*.fdb_latexmk
+*.fls
+# LOGO_UNISI_ORIZZONTALE_NERO_0.pdf
+# FinalReport/FinalReport_FirmatoValeria.pdf
